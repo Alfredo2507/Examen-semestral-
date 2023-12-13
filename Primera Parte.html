@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Cursos Educativos</title>
+    <meta name="author" content="Alfredo Acosta">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Cursos Educativos</h1>
+        <h2>La educación es el arma más poderosa que puedes usar para cambiar el mundo</h2>
+
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <form action="/buscar" method="get">
+                <input type="text" id="buscar" name="buscar" placeholder="Buscar cursos...">
+                <button type="submit">Buscar</button>
+            </form>
+        </nav>
+    </header>
+
+    <section id="inicio" class="about">
+        <h2>¡Bienvenidos a nuestro sitio web!</h2>
+        <p>Explora nuestra plataforma de educación en línea con cursos de alta calidad diseñados para ofrecer una educación excepcional.</p>
+        <p>En este espacio educativo, nuestro compromiso es inspirarte, empoderarte y guiarte en tu viaje de aprendizaje. Creemos en la transformación a través del conocimiento y estamos emocionados de tenerte a bordo.</p>
+        <p>No importa en qué etapa te encuentres, nuestros cursos están aquí para guiarte. Explora nuestros cursos, sumérgete en el conocimiento y descubre el poder de transformar tu vida a través de la educación.</p>
+        <p>Gracias por ser parte de nuestra comunidad educativa. ¡Aquí, el aprendizaje nunca termina!</p>
+    </section>
+
+    <section id="cursos" class="cursos-info">
+        <div class="curso">
+            <h2>Matemáticas</h2>
+            <div class="sub-menu">
+                <a href="CorderoModelacionAlme2005.pdf" target="_blank">Modulación de las matemáticas</a>
+                <a href="taller_operaciones_fracciones_algebraicas.pdf" target="_blank">Operaciones Algebraicas</a>
+                <a href="Itzcovich-Cap 6 - geometría.pdf" target="_blank">Matemáticas simples en el entorno escolar</a>
+            </div>
+        </div>
+
+        <div class="curso">
+            <h2>Español</h2>
+            <div class="sub-menu">
+                <a href="resenya-espanol-moderno.pdf" target="_blank">Español Moderno</a>
+                <a href="Pons_Canon_2006.pdf" target="_blank">Edición de textos e historia</a>
+                <a href="15038-+167+-+188.pdf" target="_blank">Relaciones Lógicas en la traducción del español</a>
+            </div>
+        </div>
+
+        <div class="curso">
+            <h2>Introducción a la Informática</h2>
+            <div class="sub-menu">
+                <a href="UPS-GT003356.pdf" target="_blank">Gestión Informática</a>
+                <a href="Informaticaeducativa.pdf" target="_blank">Informática educativa</a>
+                <a href="La revolución I.pdf" target="_blank">La revolución Informática</a>
+            </div>
+        </div>
+    </section>
+    <section id="videos" class="cursos-info">
+        <h2>Videos Educativos</h2>
+    
+        <div class="video">
+            <h3>Matemática- La Vida cotidiana con matemáticas</h3>
+            
+            <iframe width="560" height="315" src="C:\Users\elias\Downloads\Capítulo 06_ _ Las matemáticas en la vida cotidiana.mp4" frameborder="0" allowfullscreen="true"></iframe>
+        </div>
+    
+        <div class="video">
+            <h3>Informatica - Historia sobre la evolucion de la informática</h3>
+            
+            <iframe width="560" height="315" src="C:\Users\elias\Downloads\Historia de la Informática.mp4" frameborder="0" allowfullscreen="true"></iframe>
+        </div>
+    
+        <div class="video">
+            <h3>Español - La comunicación en el mundo</h3>
+            
+            <iframe width="560" height="315" src="C:\Users\elias\Downloads\El español en el mundo.mp4" frameborder="0" allowfullscreen="true"></iframe>
+        </div>
+    </section>
+    
+    <section id="contacto" class="cursos-info">
+        <h2>Contacto</h2>
+        <ul>
+            <li>Teléfono: (+507) 67435075</li>
+            <li>Email: aprende@cursoseducativos.com</li>
+        </ul>
+        <h3>Deja un Comentario</h3>
+        <form action="procesar_comentario.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+    
+            <label for="comentario">Comentario:</label><br>
+            <textarea id="comentario" name="comentario" rows="4" required></textarea><br>
+    
+            <button type="submit">Enviar Comentario</button>
+        </form>
+    </section>
+    
+
+    <footer>
+        <p>&copy; Cursos Educativos. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
